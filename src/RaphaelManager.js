@@ -5,7 +5,7 @@ var paper_right_border = paper.path("M800 0L800 300");
 var paper_bottom_border = paper.path("M0 300L800 300");
 var paper_left_border = paper.path("M0 0L0 300");
 
-paper.image("public/img/car.jpg", 1, 1, 300, 263);
+paper.image("img/car.jpg", 1, 1, 300, 263);
 
 var text = paper.text(500, 50, "Dynamicznie generowane suwaki");
 text.attr('font', '20px Myriad Pro');
@@ -42,7 +42,6 @@ vertical_first_bar.node.onclick = function(){
 }
 
 var start_vertical_first_bar = function(){
-    //log('--- start: start_vertical_first_bar ---');
     this.ox = this.attr("x");
 }, move_vertical_first_bar = function(dx, dy){
     if (this.ox + dx > DEFAULT_LEFT_POSITION_FIRST && this.ox + dx <= MAX_WIDTH_OF_HORIZONAL_BAR + DEFAULT_LEFT_POSITION_FIRST) {
@@ -79,7 +78,6 @@ vertical_second_bar.node.onclick = function(){
 }
 
 var start_vertical_second_bar = function(){
-    //log('--- start: start_vertical_second_bar ---');
     this.ox = this.attr("x");
 }, move_vertical_second_bar = function(dx, dy){
     if (this.ox + dx > DEFAULT_LEFT_POSITION_FIRST && this.ox + dx <= MAX_WIDTH_OF_HORIZONAL_BAR + DEFAULT_LEFT_POSITION_FIRST) {
