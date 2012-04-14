@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <title>Raphael - dynamiczne generowany suwaki</title>
+    
+    <script type="text/javascript" src="public/src/models/util.js"></script>
+    <script type="text/javascript" src="public/src/library/raphael.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="public/css/default.css" />
+    
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5140088-13']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
+    </script>
+</head>
+<body>
+    
+    <div id="page">
+        
+        <div id="svg_present"></div>
+        
+        <form method="post" action="">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>Wartość 1:</th>
+                    <td>
+                        <input id="field_1" type="text" name="field_1"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Wartość 2:</th>
+                    <td>
+                        <input id="field_2" type="text" name="field_2" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    
+    <script type="text/javascript" src="public/src/models/RaphaelManager.js"></script>
+    
+</body>
+</html>

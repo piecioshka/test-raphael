@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+input {
+    border: 1px solid #999;
+    padding: 8px 15px;
+    width: 100%;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    -moz-border-radius-topleft: 50px;
+    -moz-border-radius-bottomright: 50px;
+    -moz-box-shadow: 0 0 1em #fff;
+}
+
+table {
+    border: 1px solid #999;
+    width: 100%;
+    -moz-box-shadow: 0 0 1em #999;
+}
+
+table td {
+    padding: 10px 5px;
+    border: 1px solid #999;
+    width: 700px;
+    background: #ddd;
+}
+
+
+table th {
+    padding: 10px;
+    border: 1px solid #999;
+    width: 100px;
+    text-align: center;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
