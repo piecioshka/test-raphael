@@ -5,14 +5,15 @@
     
     <title>Raphael - dynamiczne generowany suwaki</title>
     
-    <script type="text/javascript" src="lib/raphael.js"></script>
+    <script type="text/javascript" src="src/lib/raphael.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/global.css" />
     <link rel="stylesheet" type="text/css" href="css/page.css" />
 
+    <script type="text/javascript" src="src/test-lib.js"></script>
+
     <script type="text/javascript">
-    
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-5140088-13']);
       _gaq.push(['_trackPageview']);
@@ -22,25 +23,24 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-    
     </script>
 </head>
 <body>
     
     <div id="page">
         
-        <div id="svg_present"></div>
+        <div id="svg-present"></div>
         
-        <form method="post" action="">
+        <form method="post" action="/">
             <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <th>Wartość 1:</th>
+                    <th><label for="field_1">Wartość 1:</label></th>
                     <td>
                         <input id="field_1" type="text" name="field_1"/>
                     </td>
                 </tr>
                 <tr>
-                    <th>Wartość 2:</th>
+                    <th><label for="field_2">Wartość 2:</label></th>
                     <td>
                         <input id="field_2" type="text" name="field_2" />
                     </td>
@@ -49,8 +49,6 @@
         </form>
         
     </div>
-    
-    <script type="text/javascript" src="src/RaphaelManager.js"></script>
     
 </body>
 </html>

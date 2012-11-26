@@ -9,9 +9,13 @@
     padding: 20px 50px 30px 50px;
 }
 
-#svg_present {
+#svg-present {
     width: 800px;
     height: 300px;
     margin: 0 0 30px 0;
+
+    /* CSS3 */
+    box-shadow: 0 0 2em #999;
     -moz-box-shadow: 0 0 2em #999;
+    -webkit-box-shadow: 0 0 2em #999;
 }
