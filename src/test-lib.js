@@ -18,10 +18,10 @@
         var text = paper.text(500, 50, "Dynamicznie generowane suwaki");
         text.attr('font', '20px Myriad Pro');
 
-        var MAX_WIDTH_OF_HORIZONAL_BAR = 350;
+        var MAX_WIDTH_OF_HORIZONTAL_BAR = 350;
 
-        var horizontal_first_bar = paper.rect(MAX_WIDTH_OF_HORIZONAL_BAR, 150, 400, 20, 5);
-        var horizontal_second_bar = paper.rect(MAX_WIDTH_OF_HORIZONAL_BAR, 200, 400, 20, 5);
+        var horizontal_first_bar = paper.rect(MAX_WIDTH_OF_HORIZONTAL_BAR, 150, 400, 20, 5);
+        var horizontal_second_bar = paper.rect(MAX_WIDTH_OF_HORIZONTAL_BAR, 200, 400, 20, 5);
 
         for (var i = 50; i < 420; i = i + 20) {
             paper.path("M" + (320 + i) + " 150L" + (i + 320) + " 170");
@@ -52,7 +52,7 @@
         }
 
         function move_vertical_first_bar(dx, dy) {
-            if (this.ox + dx > DEFAULT_LEFT_POSITION_FIRST && this.ox + dx <= MAX_WIDTH_OF_HORIZONAL_BAR + DEFAULT_LEFT_POSITION_FIRST) {
+            if (this.ox + dx > DEFAULT_LEFT_POSITION_FIRST && this.ox + dx <= MAX_WIDTH_OF_HORIZONTAL_BAR + DEFAULT_LEFT_POSITION_FIRST) {
                 this.attr({
                     x: this.ox + dx
                 });
@@ -92,7 +92,7 @@
         }
 
         function move_vertical_second_bar(dx, dy) {
-            if (this.ox + dx > DEFAULT_LEFT_POSITION_FIRST && this.ox + dx <= MAX_WIDTH_OF_HORIZONAL_BAR + DEFAULT_LEFT_POSITION_FIRST) {
+            if (this.ox + dx > DEFAULT_LEFT_POSITION_FIRST && this.ox + dx <= MAX_WIDTH_OF_HORIZONTAL_BAR + DEFAULT_LEFT_POSITION_FIRST) {
                 this.attr({
                     x: this.ox + dx
                 });

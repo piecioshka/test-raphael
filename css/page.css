@@ -15,7 +15,7 @@
     margin: 0 0 30px 0;
 
     /* CSS3 */
-    box-shadow: 0 0 2em #999;
     -moz-box-shadow: 0 0 2em #999;
     -webkit-box-shadow: 0 0 2em #999;
+    box-shadow: 0 0 2em #999;
 }
