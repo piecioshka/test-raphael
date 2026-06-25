@@ -5,3 +5,7 @@
 ## Preview 🎉
 
 https://piecioshka.github.io/test-raphael/
+
+## License
+
+[The MIT License](http://piecioshka.mit-license.org) @ 2026
